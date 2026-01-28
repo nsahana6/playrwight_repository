@@ -11,9 +11,9 @@ test("noukri",async({page})=>{
 
 // await page.waitForTimeout(3000)
 
-await page.goto("https://www.youtube.com/")
-await page.locator("//input[@name='search_query']").fill("modala maleyanthe kannada song")
-await page.keyboard.press("Enter")
-await page.locator('(//yt-formatted-string[@class="style-scope ytd-video-renderer"])[3]').click()
-//await page.waitForTimeout(300000)
+// await page.goto("https://www.youtube.com/")
+// await page.locator("//input[@name='search_query']").fill("modala maleyanthe kannada song")
+// await page.keyboard.press("Enter")
+// await page.locator('(//yt-formatted-string[@class="style-scope ytd-video-renderer"])[3]').click()
+// //await page.waitForTimeout(300000)
 },{timeout:50000})

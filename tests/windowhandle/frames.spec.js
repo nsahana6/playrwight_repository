@@ -20,12 +20,12 @@ test("frames", async({page})=>{
     // await a.fill('abcdef')
     // await page.waitForTimeout(2000)
     // //
-    //-----------------A3----------
+    //-----------------A3-------------------
     let frame2 = await page.locator('//frame[@src="frame_2.html"]').contentFrame()
     frame2.locator('//input[@name="mytext2"]').fill("skanda")
     await page.waitForTimeout(2000)
     //
-    //------------
+    //---------------------
     // await page.locator('//div[@class="ulDsOb" and .="I am a human"]').fill("Sneha")
     // 
      //button.click()
