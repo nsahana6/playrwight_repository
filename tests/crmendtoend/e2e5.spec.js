@@ -24,10 +24,10 @@ test("e2e",async({page})=>{
     let admin=testdata.adminTF
     let adminPW=testdata.adminPW
     let adminnewPW=testdata.adminNewPW
-    // page.on("dialog",async(dialog)=>{
-    //     console.log(await dialog.message());
-    //     await dialog.accept()
-    // })
+    page.on("dialog",async(dialog)=>{
+        console.log(await dialog.message());
+        await dialog.accept()
+    })
     let landingpage=new landing(page)
     let signuppage=new signup(page)
     let signinpage=new signin(page)
