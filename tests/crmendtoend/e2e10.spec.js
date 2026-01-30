@@ -15,11 +15,11 @@ test("e2e",async({page})=>{
         console.log(await dialog.message());
         await dialog.accept()
     })
-    let landingpage=new landing(page)
-    let signinpage=new signin(page)
-    let adminhomepages=new adminhomepage(page)
-    let manageticket=new managetickets(page)
-     let manageqoutes=new manageQoute(page)
+    let landingpage=new landing(page);
+    let signinpage=new signin(page);
+    let adminhomepages=new adminhomepage(page);
+    let manageticket=new managetickets(page);
+     let manageqoutes=new manageQoute(page);
     //lounch url
     await page.goto(url)
     await landingpage.adminlink.click()
